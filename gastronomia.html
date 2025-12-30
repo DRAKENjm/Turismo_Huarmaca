@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía - Huarmaca</title>
+    <link rel="stylesheet" href="estiloHuar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="img/huarmaca.jpg" alt="Logo Huarmaca" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">HUARMACA</span>
+                <span class="logo-subtitle">Turismo Andino</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Index.html"><i class="fas fa-home"></i> INICIO</a></li>
+            <li><a href="lugares.html"><i class="fas fa-mountain"></i> LUGARES</a></li>
+            <li><a href="alojamiento.html"><i class="fas fa-hotel"></i> HOSPEDAJE</a></li>
+            <li><a href="gastronomia.html" class="active"><i class="fas fa-utensils"></i> GASTRONOMÍA</a></li>
+            <li><a href="Eventos.html"><i class="fas fa-calendar-alt"></i> EVENTOS</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>GASTRONOMÍA</h1>
+            <h2 class="hotel-subtitle">Sabores de la Sierra Piurana</h2>
+            <p>La gastronomía de Huarmaca se caracteriza por el uso de productos locales como el trigo, el maíz, la oca y el queso, reflejando la tradición y la identidad cultural de la sierra piurana</p>
+        </section>
+
+        <div class="gastronomy-gallery">
+            <h3>Platos Típicos de Huarmaca</h3>
+            <div class="gallery-container">
+                <div class="gallery-item" data-dish="trigo" data-name="Trigo con Gallina" data-description="Plato tradicional preparado con trigo cocido y gallina criolla, muy consumido en festividades y reuniones familiares.">
+                    <img src="img/trigogallina.jpg" alt="Trigo con Gallina" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Trigo con Gallina</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="tortillas_queso" data-name="Tortillas con Queso" data-description="Tortillas elaboradas con harina de trigo, acompañadas de queso fresco huarmaquino, ideales para el desayuno o la cena.">
+                    <img src="img/tortillaqueso.jpg" alt="Tortillas con Queso" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Tortillas con Queso</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="sango" data-name="Sango" data-description="Plato emblemático de Huarmaca, preparado a base de trigo o mashca, de consistencia espesa y alto valor nutritivo.">
+                    <img src="img/sango.jpg" alt="Sango" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Sango</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="tamales" data-name="Tamales" data-description="Preparados con masa de maíz y rellenos tradicionales, envueltos en hojas y cocidos al vapor.">
+                    <img src="img/tamales.jpg" alt="Tamales" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Tamales</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="humitas" data-name="Humitas" data-description="Masa de maíz tierno envuelta en pancas, cocida al vapor y consumida en versiones dulces o saladas.">
+                    <img src="img/humitas.jpg" alt="Humitas" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Humitas</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="ocas" data-name="Ocas con Queso" data-description="Plato sencillo y tradicional elaborado con ocas sancochadas acompañadas de queso fresco.">
+                    <img src="img/ocaqueso.jpg" alt="Ocas con Queso" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Ocas con Queso</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-dish="mote" data-name="Mote con Chicharrón" data-description="Combinación clásica de mote cocido con chicharrón crujiente, muy popular en celebraciones locales.">
+                    <img src="img/motechicharron.jpg" alt="Mote con Chicharrón" class="gallery-img">
+                    <div class="gallery-content">
+                        <h4>Mote con Chicharrón</h4>
+                        <button class="detail-btn" onclick="openDishModal(this)">Ver Detalle</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL PARA DETALLES DE PLATOS -->
+        <div id="dishModal" class="modal-overlay">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeDishModal()">×</button>
+                <div class="modal-body">
+                    <h2 id="dishName"></h2>
+                    <p id="dishDescription"></p>
+                </div>
+            </div>
+        </div>
+
+        <section class="places-info">
+            <div class="info-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Ingredientes Frescos</h3>
+                <p>Los platos se preparan con productos locales cultivados en la zona andina de Huarmaca.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-fire"></i>
+                <h3>Cocina Tradicional</h3>
+                <p>Técnicas ancestrales transmitidas de generación en generación.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-heart"></i>
+                <h3>Sabor Auténtico</h3>
+                <p>Experimenta la verdadera esencia de la gastronomía serrana piurana.</p>
+            </div>
+        </section>
+
+        <section class="restaurants-section">
+            <h2><i class="fas fa-store"></i> ¿Dónde Comer en Huarmaca?</h2>
+            <p style="text-align: center; margin-bottom: 30px; opacity: 0.9;">
+                Lugares auténticos para disfrutar de la comida tradicional
+            </p>
+            
+            <div class="hotels-grid">
+                <div class="hotel-card">
+                    <img src="img/mercadillo.jpg" alt="Mercadillo Municipal">
+                    <div class="hotel-info">
+                        <h3>Mercadillo Municipal</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Centro de Huarmaca</p>
+                        <p><i class="fas fa-utensils"></i> Espacios ideales para probar auténtica gastronomía huarmaquina</p>
+                    </div>
+                </div>
+                
+                <div class="hotel-card">
+                    <img src="img/locales.jpg" alt="Restaurantes Locales">
+                    <div class="hotel-info">
+                        <h3>Restaurantes Locales</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Distintos sectores</p>
+                        <p><i class="fas fa-star"></i> Comida casera, económica y tradicional</p>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <img src="img/ambulante.jpg" alt="Kioscos y Vendedores">
+                    <div class="hotel-info">
+                        <h3>Kioscos y Vendedores Ambulantes</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Calles principales</p>
+                        <p><i class="fas fa-star"></i> Humitas, tortillas y snacks típicos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Huarmaca Turístico</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/search/top?q=huarmaca%20piura" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/explore/tags/huarmaca/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51957370391" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

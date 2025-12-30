@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huarmaca - Portal Turístico Oficial</title>
+    <link rel="stylesheet" href="estiloHuar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="img/huarmaca.jpg" alt="Logo Huarmaca" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">HUARMACA</span>
+                <span class="logo-subtitle">Turismo Andino</span>
+            </div>
+        </div>
+        <button class="solicitar-guia-btn" id="solicitarGuiaBtn">
+            <i class="fas fa-user-tie"></i> Solicitar Guía Turístico
+        </button>
+    </div>
+
+    <nav class="main-nav">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Index.html" class="active"><i class="fas fa-home"></i> INICIO</a></li>
+            <li><a href="lugares.html"><i class="fas fa-mountain"></i> LUGARES</a></li>
+            <li><a href="alojamiento.html"><i class="fas fa-hotel"></i> HOSPEDAJE</a></li>
+            <li><a href="gastronomia.html"><i class="fas fa-utensils"></i> GASTRONOMÍA</a></li>
+            <li><a href="Eventos.html"><i class="fas fa-calendar-alt"></i> EVENTOS</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- HERO PRINCIPAL -->
+        <section class="hero-section">
+            <div class="hero-text">
+                <span class="hero-badge"><i class="fas fa-map-marker-alt"></i> Piura, Perú</span>
+                <h1>HUARMACA</h1>
+                <h2>La Capital del Cielo</h2>
+                <p>
+                    Bienvenido a un paraíso escondido en la sierra de Piura.       
+                    Descubre sus paisajes sagrados, 
+                    tradiciones milenarias y la hospitalidad de su gente.
+                </p>
+                <div class="hero-buttons">
+                    <a href="lugares.html" class="explore-btn"><i class="fas fa-compass"></i> EXPLORAR</a>
+                    <a href="#ubicacion" class="explore-btn btn-secondary"><i class="fas fa-map"></i> CÓMO LLEGAR</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/vista.jpg" alt="Vista panorámica de Huarmaca">
+            </div>
+        </section>
+
+        <!-- DATOS RÁPIDOS -->
+        <section class="quick-facts">
+            <div class="fact-item">
+                <div class="fact-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <div class="fact-content">
+                    <span class="fact-number">2,186</span>
+                    <span class="fact-label">metros de altitud</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-icon">
+                    <i class="fas fa-temperature-half"></i>
+                </div>
+                <div class="fact-content">
+                    <span class="fact-number">18°C</span>
+                    <span class="fact-label">clima promedio</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="fact-content">
+                    <span class="fact-number">+40,000</span>
+                    <span class="fact-label">habitantes</span>
+                </div>
+            </div>
+            <div class="fact-item">
+                <div class="fact-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="fact-content">
+                    <span class="fact-number">4 hrs</span>
+                    <span class="fact-label">desde Piura</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ¿POR QUÉ VISITAR? -->
+        <section class="why-visit">
+            <h2 class="section-title"><i class="fas fa-heart"></i> ¿Por qué visitar Huarmaca?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Naturaleza Pura</h3>
+                    <p>Bosques de neblina, cascadas cristalinas y lagunas escondidas te esperan en cada rincón.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>Cultura Ancestral</h3>
+                    <p>Tradiciones que perduran por generaciones, fiestas patronales y danzas típicas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Sabores Únicos</h3>
+                    <p>Gastronomía serrana auténtica con ingredientes frescos cultivados en la zona.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- UBICACIÓN -->
+        <section class="location-section" id="ubicacion">
+            <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Nuestra Ubicación</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-detail">
+                        <i class="fas fa-globe-americas"></i>
+                        <div>
+                            <h4>Región</h4>
+                            <p>Piura, Perú</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <h4>Provincia</h4>
+                            <p>Huancabamba</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-road"></i>
+                        <div>
+                            <h4>Cómo llegar</h4>
+                            <p>Desde Piura: Ruta Piura - Canchaque - Huarmaca (4 horas aprox.)</p>
+                        </div>
+                    </div>
+                    <div class="location-detail">
+                        <i class="fas fa-bus"></i>
+                        <div>
+                            <h4>Transporte</h4>
+                            <p>Buses Interprovinciales, Combis y Minibuses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63456.89!2d-79.53!3d-5.57!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904b4a5b5b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2sHuarmaca%2C%20Piura%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1699999999999" 
+                        width="100%" 
+                        height="350" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>¿Listo para tu próxima aventura?</h2>
+                <p>Huarmaca te espera con los brazos abiertos. Planifica tu viaje y vive una experiencia inolvidable.</p>
+                <div class="cta-buttons">
+                    <a href="lugares.html" class="cta-btn"><i class="fas fa-camera"></i> Ver Lugares Turísticos</a>
+                    <a href="Eventos.html" class="cta-btn cta-btn-outline"><i class="fas fa-calendar"></i> Próximos Eventos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL SOLICITAR GUÍA TURÍSTICO -->
+    <div class="modal-overlay" id="solicitarGuiaModal">
+        <div class="modal-content guide-modal">
+            <button class="modal-close" id="closeGuiaModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2><i class="fas fa-user-tie"></i> Solicitar Guía Turístico</h2>
+                <form id="solicitarGuiaForm" class="guide-form">
+                    <!-- DATOS PERSONALES -->
+                    <fieldset class="form-fieldset">
+                        <legend>Datos Personales</legend>
+                        
+                        <div class="form-group">
+                            <label for="guia_nombre">Nombre Completo *</label>
+                            <input 
+                                type="text" 
+                                id="guia_nombre" 
+                                name="nombre" 
+                                placeholder="Juan Pérez"
+                                class="input-only-letters"
+                                required>
+                            <span class="input-error" id="error_nombre"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guia_apellido">Apellidos *</label>
+                            <input 
+                                type="text" 
+                                id="guia_apellido" 
+                                name="apellido" 
+                                placeholder="García López"
+                                class="input-only-letters"
+                                required>
+                            <span class="input-error" id="error_apellido"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guia_email">Email *</label>
+                            <input 
+                                type="email" 
+                                id="guia_email" 
+                                name="email" 
+                                placeholder="correo@ejemplo.com"
+                                required>
+                            <span class="input-error" id="error_email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guia_procedencia">Procedencia (Ciudad) *</label>
+                            <input 
+                                type="text" 
+                                id="guia_procedencia" 
+                                name="procedencia" 
+                                placeholder="Lima"
+                                class="input-only-letters"
+                                required>
+                            <span class="input-error" id="error_procedencia"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guia_observaciones">Observaciones (Opcional)</label>
+                            <textarea 
+                                id="guia_observaciones" 
+                                name="observaciones" 
+                                placeholder="Cuéntanos sobre tu viaje..."
+                                rows="3"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- BOTONES -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-check"></i> Enviar por WhatsApp
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            <i class="fas fa-redo"></i> Limpiar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><i class="fas fa-mountain"></i> Huarmaca Turístico</h3>
+                <p>Tu portal de turismo en la sierra de Piura</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone"></i> +51 957 370 391</p>
+                <p><i class="fas fa-envelope"></i> turismo@huarmaca.gob.pe</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/munihuarmaca" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/explore/tags/huarmaca/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51957370391" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Municipalidad Distrital de Huarmaca. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>

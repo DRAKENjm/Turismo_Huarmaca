@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turísticos - Huarmaca</title>
+    <link rel="stylesheet" href="estiloHuar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="img/huarmaca.jpg" alt="Logo Huarmaca" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">HUARMACA</span>
+                <span class="logo-subtitle">Turismo Andino</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="Index.html"><i class="fas fa-home"></i> INICIO</a></li>
+            <li><a href="lugares.html" class="active"><i class="fas fa-mountain"></i> LUGARES</a></li>
+            <li><a href="alojamiento.html"><i class="fas fa-hotel"></i> HOSPEDAJE</a></li>
+            <li><a href="gastronomia.html"><i class="fas fa-utensils"></i> GASTRONOMÍA</a></li>
+            <li><a href="Eventos.html"><i class="fas fa-calendar-alt"></i> EVENTOS</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>LUGARES TURÍSTICOS</h1>
+            <h2 class="places-subtitle">Descubre los secretos de Huarmaca</h2>
+            <p>Explora los rincones más bellos y emblemáticos de nuestra tierra</p>
+        </section>
+
+        <div class="places-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="naturaleza">Naturaleza</button>
+            <button class="filter-btn" data-filter="cultura">Cultura</button>
+            <button class="filter-btn" data-filter="aventura">Aventura</button>
+        </div>
+
+        <div class="places-grid">
+            <div class="place-card" data-category="naturaleza">
+                <div class="place-img-container">
+                    <img src="img/chorroblanco.jpg" alt="Catarata Chorro Blanco" class="place-img">
+                    <div class="place-category">Naturaleza</div>
+                </div>
+                <div class="place-info">
+                    <h3>Catarata Chorro Blanco</h3>
+                    <p class="place-description">Impresionante caída de agua de aproximadamente 75 metros.</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Distrito de Huarmaca</p>
+                        <p><i class="fas fa-clock"></i> 30-45 minutos de ida desde el centro </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-card" data-category="naturaleza">
+                <div class="place-img-container">
+                    <img src="img/lagunaverde.jpg" alt="Laguna Verde" class="place-img">
+                    <div class="place-category">Naturaleza</div>
+                </div>
+                <div class="place-info">
+                    <h3>Laguna Verde</h3>
+                    <p class="place-description">Espacio natural tranquilo que permite la relajación y la conexión con la naturaleza.</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Huarmaca con el caserío Succharana</p>
+                        <p><i class="fas fa-clock"></i> 15-30 minutos desde el centro</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-card" data-category="cultura">
+                <div class="place-img-container">
+                    <img src="img/ruinassucchuran.jpg" alt="Ruinas de Succhuran" class="place-img">
+                    <div class="place-category">Cultura</div>
+                </div>
+                <div class="place-info">
+                    <h3>Ruinas de Succhuran</h3>
+                    <p class="place-description">Importante sitio arqueológico ubicado en el caserío de Succhuran.</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Succhuran</p>
+                        <p><i class="fas fa-clock"></i> 1-2 horas desde Huarmaca</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-card" data-category="aventura">
+                <div class="place-img-container">
+                    <img src="img/cruzdehuarmaca.jpg" alt="Mirador La Cruz" class="place-img">
+                    <div class="place-category">Aventura</div>
+                </div>
+                <div class="place-info">
+                    <h3>Mirador La Cruz</h3>
+                    <p class="place-description">Ofrece vistas panorámicas del pueblo y un "colchón de nubes"</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Huarmaca</p>
+                        <p><i class="fas fa-clock"></i> 10-15 minutos de caminata</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-card" data-category="aventura">
+                <div class="place-img-container">
+                    <img src="img/Cerroparaton.jpg" alt="El Cerro Paratón" class="place-img">
+                    <div class="place-category">Aventura</div>
+                </div>
+                <div class="place-info">
+                    <h3>El Cerro Paratón</h3>
+                    <p class="place-description">Es famoso por su belleza natural y biodiversidad.</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Huarmaca</p>
+                        <p><i class="fas fa-clock"></i> 2-3 horas de recorrido</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-card" data-category="naturaleza">
+                <div class="place-img-container">
+                    <img src="img/cerronegro.jpg" alt="Cerro Negro" class="place-img">
+                    <div class="place-category">Naturaleza</div>
+                </div>
+                <div class="place-info">
+                    <h3>Cerro Negro</h3>
+                    <p class="place-description">Es un imponente atractivo turístico, un tesoro escondido que ofrece momentos inolvidables a sus visitantes.</p>
+                    <div class="place-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Huarmaca, caserío de San Juan del Temple, Caserío Cuse</p>
+                        <p><i class="fas fa-clock"></i> 1-2 horas de recorrido</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="places-info">
+            <div class="info-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Consejo del Viajero</h3>
+                <p>Visita durante la temporada seca (mayo-octubre) para mejores condiciones climáticas.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Seguridad</h3>
+                <p>Contrata guías locales certificados para excursiones en zonas naturales.</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-camera"></i>
+                <h3>Fotografía</h3>
+                <p>Las mejores horas para fotografía son al amanecer y atardecer.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Huarmaca Turístico</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/search/top?q=huarmaca%20piura" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/explore/tags/huarmaca/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51957370391" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
